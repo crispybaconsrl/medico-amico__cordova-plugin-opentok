@@ -9,15 +9,13 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
         jcenter()
-        maven {
-            url  "http://tokbox.bintray.com/maven"
-            allowInsecureProtocol = true
-        }
+        mavenCentral()
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.opentok.android:opentok-android-sdk:2.14.0'
+    implementation 'com.opentok.android:opentok-android-sdk:2.24.0'
 } 
